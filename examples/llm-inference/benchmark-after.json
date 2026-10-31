@@ -1,0 +1,33 @@
+{
+  "context": {
+    "workload": "人工构造的固定长度 LLM Prefill 演示",
+    "hardware": "模拟，无实际设备",
+    "version": "demo-v1",
+    "protocol": "每组5个演示样本，无真实采集"
+  },
+  "treatment": "演示算子优化假设",
+  "metrics": {
+    "ttft": {
+      "unit": "ms",
+      "direction": "lower",
+      "samples": [
+        80.0,
+        88.0,
+        72.0,
+        84.0,
+        76.0
+      ]
+    },
+    "throughput": {
+      "unit": "tokens/s",
+      "direction": "higher",
+      "samples": [
+        1250.0,
+        1375.0,
+        1125.0,
+        1312.5,
+        1187.5
+      ]
+    }
+  }
+}
